@@ -5,14 +5,25 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-}
+   if(x >= y) console.log(x);
+   else console.log(y)
+   
+   
+
+}obtenerMayor(10, 2);
+obtenerMayor(5, 5);
+
+
+
 
 function mayoriaDeEdad(edad) {
    // Determinar si la persona puede ingresar al evento según su edad.
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-}
+   if(edad >= 18) console.log('Allowed');
+   else console.log('Not Allowed');
+} mayoriaDeEdad(22);
 
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
@@ -21,7 +32,12 @@ function conection(status) {
    // De lo contrario, presumimos que el usuario está "Offline".
    // Retornar el estado de conexión del usuario.
    // Tu código:
-}
+   if(status === 1)console.log('Online');
+   else if (status === 2)console.log('Away');
+   else console.log('Offline')
+
+}conection(3)
+conection(1)
 
 function saludo(idioma) {
    // Retornar un saludo en tres diferentes lenguajes:
@@ -30,7 +46,15 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-}
+   if (idioma === 'aleman')console.log('Guten Tag!');
+   else if (idioma === 'mandarin') console.log('Ni Hao!');
+   else if (idioma === 'ingles') console.log('Hello!');
+   else console.log('Hola!');
+} 
+saludo('frances');
+saludo('frances');
+saludo('aleman');
+
 
 function colors(color) {
    // La función recibe un color. Retornar el string correspondiente:
@@ -41,7 +65,25 @@ function colors(color) {
    // Si no es ninguno de esos colores           --> "Color not found".
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
+   switch(color){
+      case 'blue' : console.log('This is blue');
+      break;
+      case 'red' : console.log('This is red');
+      break;
+      case'green' :console.log('This is green');
+      break;
+      case 'orange' : console.log('This is orange');
+      break;
+      default: console.log('Color not found')
+
+
+      
+   }
+
 }
+colors('red');
+colors('verde');
+
 
 function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.

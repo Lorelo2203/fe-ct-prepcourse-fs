@@ -6,32 +6,46 @@
 function elevarAlCuadrado(num) {
    // Retorna el valor de "num" elevado al cuadrado.
    // Tu código:
-}
+   var num = 2;
+   return Math.pow(num , 2);
+}console.log(elevarAlCuadrado);
+
 
 function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
    // Tu código:
-}
+   var num = 3;
+   return Math.pow(num , 3);
+}console.log(elevarAlCubo);
+
 
 function elevar(num, exponent) {
    // Retorna el valor de "num" elevado al exponente "exponent".
    // Tu código:
-}
+   var num = 6;
+   var exponent = 3;
+   return Math.pow(num, exponent);
+} console.log(elevar);
 
 function redondearNumero(num) {
    // Redondea "num" al entero más próximo y retórnalo.
    // Tu código:
-}
+   var num = 2.36;
+   return Math.round(num);
+} console.log(redondearNumero);
 
 function redondearHaciaArriba(num) {
    // Redondea "num" hacia arriba y retórnalo.
    // Tu código:
-}
+   var num = 5.56;
+   return Math.ceil(num);
+} console.log(redondearHaciaArriba);
 
 function numeroRandom() {
    // Genera un número al azar entre 0 y 1 y retórnalo.
    // Tu código:
-}
+   return Math.random();
+} console.log(numeroRandom);
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
